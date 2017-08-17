@@ -1,0 +1,32 @@
+{
+  "name": "birddataapi",
+  "version": "1.0.0",
+  "description": "REST API for bird CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snapdrgon/birdDataApi.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "Birds"
+  ],
+  "author": "Lynn Kirste",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snapdrgon/birdDataApi/issues"
+  },
+  "homepage": "https://github.com/snapdrgon/birdDataApi#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
+  }
+}
