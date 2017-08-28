@@ -1,6 +1,4 @@
 'use strict';
-
-
 var mongoose = require('mongoose'),
   Bird = mongoose.model('Birds');
 
@@ -12,14 +10,14 @@ exports.list_birds = function(req, res) {
   });
 };
 
-
-
-
 exports.add_bird = function(req, res) {
   var new_bird = new Bird(req.body);
   new_bird.save(function(err, bird) {
-    if (err)
+    if (err) {
+   //   console.log(err);
       res.send(err);
+    }
+  // console.log(bird);
     res.json(bird);
   });
 };
